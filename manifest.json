@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "PlurkNotifier",
+    "version": "1.0",
+    "applications": {
+        "gecko": {
+            "id": "catgifs@mozilla.org"
+        }
+    },
+
+    "browser_action": {
+        "default_title": "PlurkNotifier"
+    },
+    "background": {
+        "scripts": ["main.bundle.js"]
+    },
+    "permissions": ["*://www.plurk.com/*", "webRequest", "notifications"],
+    "content-scripts": {
+        "scripts": ["./lib/key.js", "./lib/plurk_oauth.js"]
+    }
+}

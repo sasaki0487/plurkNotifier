@@ -1,0 +1,19 @@
+{
+    "name": "plurknotifier",
+    "version": "1.0.0",
+    "description": "A background program to send user notification.",
+    "main": "main.js",
+    "scripts": {
+        "start": "node main.js",
+        "build": "webpack"
+    },
+    "author": "sasaki0487",
+    "license": "ISC",
+    "dependencies": {
+        "oauth": "^0.9.15"
+    },
+    "devDependencies": {
+        "webpack": "^4.44.2",
+        "webpack-cli": "^3.3.12"
+    }
+}
